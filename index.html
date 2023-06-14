@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web 1-04</title>
+        <style>
+            *{margin:0px; padding:0px;}
+            body{display:flex;}
+            a{text-decoration:none;}
+            #big{
+                display:flex;
+                width:1280px; height:720px;
+                background-color:RGB(50,50,50);
+                margin:0px auto;
+            }
+            .title{
+                width:278px; height:100%;
+                border-right:2px solid white;
+            }
+            .up_box{
+                width:278px; height:360px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .up_box>div{
+                font-family:times new roman;
+                font:italic bold 1.5em/1em Georgia;
+                font-size:30pt;
+                color:white;
+                line-height:50px;
+            }
+            .down_box{
+                position:relative;
+                width:278px; height:360px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .down_box>div{
+                position:absolute;
+                font-family:verdana;
+                font:normal;
+                font-size:10pt;
+                color:white;
+                line-height:16pt;
+                bottom:20px;
+            }
+            .menu_box{
+                display:flex;
+                flex-direction:column;
+                width:1000px; height:720px;
+            }
+            .nav_box{
+                position:relative;
+                width:100%; height:118px;
+                border-bottom:2px solid white;
+            }
+            .nav_box>div{
+                position:absolute;
+                bottom:10px;
+                right:10px;
+            }
+            .contents_box{
+                display:flex;
+                width:1000px; height:600px;
+            }
+            .section_box{
+                display:flex;
+                width:100%; height:600px;
+            }
+            .article{
+                position:relative;
+                width:250px; height:100%;
+                opacity:0.4;
+                overflow:hidden;
+            }
+            .article span>img{
+                position:absolute;
+                left:-250px;
+                transition:1s;
+
+            }
+            .article:hover{opacity:1;}
+            .article:hover span img{left:0px;}
+            .article_menu{
+                display:flex;
+                position:absolute;
+                flex-direction:column;
+                width:170px; height:460px;
+                margin:70px 40px;
+            }
+            .article:hover .article_menu{
+                width:200px; transition:0.5s;
+            }
+            .mini_upbox{
+                width:170px; height:230px;
+                color:white;
+            }
+            .mini_upbox h1{
+                font:bold 30px/1 "verdana";
+                width:60px; padding-bottom:20px;
+                border-bottom:3px solid white;
+            }
+            .mini_upbox h3{
+                font:bold 15px/1 "verdana";
+                margin:20px 0px;
+            }
+            .mini_downbox{
+                display:flex;
+                align-items:flex-end;
+                width:100%; height:100%;
+            }
+            .image_box{
+                width:100%; height:115px;
+            }
+            .article:hover .image_box{
+                height:145px; transition:0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="big">
+            <div class="title">
+                <div class="up_box">
+                    <div>FORTNITE</div>
+                </div>
+                <div class="down_box">
+                    <div>@2023, Epic Games, Ine.<br>
+                    All Rights Reserved.</div>
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="nav_box">
+                    <div><img src="mail.png" width="30px"></div>
+                </div>
+                <div class="contents_box">
+                    <div class="section_box">
+                        <div class="article">
+                            <span><img src="back.png"width="100%"height="100%"></span>
+                            <div class="article_menu">
+                                <div class="mini_upbox">
+                                    <h1>01</h1>
+                                    <h3>BATTLE ROYAL</h3>
+                                    The bettle is building!<br>
+                                    Drop into the Battle<br>
+                                    Royale. Loot, build,<br>
+                                    explore, and fight in a<br>
+                                    game of 100 players<br>
+                                    competing to be the<br>
+                                    last one standing.
+                                </div>
+                                <div class="mini_downbox">
+                                    <div class="image_box">
+                                        <a href="overwatch.html"><img src="img1.png"width="100%"height="100%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <span><img src="back.png"width="100%"height="100%"></span>
+                            <div class="article_menu">
+                                <div class="mini_upbox">
+                                    <h1>02</h1>
+                                    <h3>ZERO BUILD</h3>
+                                    All battle, no building!<br>
+                                    Zero Build is all the<br>
+                                    action, loot, and<br>
+                                    progression of classic<br>
+                                    Battle Royale, without<br>
+                                    the Building!
+                                </div>
+                                <div class="mini_downbox">
+                                    <div class="image_box">
+                                        <a href="overwatch.html"><img src="img2.png"width="100%"height="100%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <span><img src="back.png"width="100%"height="100%"></span>
+                            <div class="article_menu">
+                                <div class="mini_upbox">
+                                    <h1>03</h1>
+                                    <h3>ARENA MODES</h3>
+                                    Test your skills<br>
+                                    against the best!<br>
+                                    During each match,<br>
+                                    you'll earn Hype by<br>
+                                    either achieving high<br>
+                                    placements or<br>
+                                    eliminating<br>
+                                    opponents.
+                                </div>
+                                <div class="mini_downbox">
+                                    <div class="image_box">
+                                        <a href="overwatch.html"><img src="img3.png"width="100%"height="100%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <span><img src="back.png"width="100%"height="100%"></span>
+                            <div class="article_menu">
+                                <div class="mini_upbox">
+                                    <h1>04</h1>
+                                    <h3>ARENA MODES</h3>
+                                    Test your skills<br>
+                                    against the best!<br>
+                                    During each match,<br>
+                                    you'll earn Hype by<br>
+                                    either achieving high<br>
+                                    placements or<br>
+                                    eliminating<br>
+                                    opponents.
+                                </div>
+                                <div class="mini_downbox">
+                                    <div class="image_box">
+                                        <a href="overwatch.html"><img src="img4.png"width="100%"height="100%"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
